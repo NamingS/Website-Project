@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 시간표</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 800px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 8px;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        td {
+            color: #333;
+        }
+        .header {
+            background-color: #ff8c00;
+            color: white;
+            font-size: 24px;
+            padding: 16px 0;
+        }
+        .subject {
+            background-color: #ff8c00;
+            color: black;
+            font-weight: bold;
+            border: 2px solid #777;
+        }
+        .time {
+            background-color: #d3d3d3;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr class="header">
+            <th colspan="6">내 시간표</th>
+        </tr>
+        <tr>
+            <th>교시</th>
+            <th>월요일</th>
+            <th>화요일</th>
+            <th>수요일</th>
+            <th>목요일</th>
+            <th>금요일</th>
+        </tr>
+        <tr>
+            <td class="time">1교시</td>
+            <td></td> 
+            <td class="subject" rowspan="3">웹 프로그래밍</td>
+            <td></td>
+            <td class="subject" rowspan="3">자료구조</td>
+            <td class="subject" rowspan="3">리눅스</td>
+        </tr>
+        <tr>  
+            <td class="time">2교시</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="time">3교시</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="time">4교시</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="time">5교시</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td class="time">6교시</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="time">7교시</td>
+            <td></td>
+            <td class="subject" rowspan="2">지성학</td>
+            <td class="subject" rowspan="3">확률과 통계</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="time">8교시</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="time">9교시</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>    
+    </table>
+    
+    
+</body>
+</html>
