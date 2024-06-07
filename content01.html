@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Personal Site</title>
+<link rel="stylesheet" type="text/css" href="https://webfontbox.github.io/Arita/font.css">
+<link rel="stylesheet" type="text/css" href="https://webfontbox.github.io/Arita/font.min.css">
+<title>My Website</title>
 <style>
     body, html {
         height: 100%;
         margin: 0;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background: #121212;
-        color: #e0e0e0;
+        font-family: 'Arita';
+        background-color: #FFC31E;
+        color: whitesmoke;
+        display: flex;
+        justify-content: center;  
+        align-items: center;      
     }
     .container {
         display: flex;
@@ -20,17 +24,19 @@
         overflow: visible;
     }
     .polaroid {
-        width: 240px;
-        background: #1e1e1e;
+        width: 220px;
+        background-color: whitesmoke;
         box-shadow: 0 4px 8px rgba(0,0,0,0.7);
-        margin: 10px;
+        margin-top: 20px;
+        margin-left: 90px;
+        margin-right: 90px;
         transition: transform 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease;
-        overflow: visible;
         position: relative;
         cursor: pointer;
         border-radius: 8px;
         padding: 10px;
-        transform-origin: center center;
+        transform-origin: center 50%;
+        z-index: 1;
     }
     .polaroid:hover {
         box-shadow: 0 12px 24px rgba(0,0,0,0.9);
@@ -52,34 +58,33 @@
         padding: 10px;
         font-size: 16px;
         font-weight: bold;
-        color: #e0e0e0;
+        color: darkslategray;
     }
 </style>
 </head>
 <body>
-<div height="10"></div>
 <div class="container">
     <div class="polaroid" id="timetable">
         <a href="timetable.html" target="_self" alt="시간표" title="클릭하면 시간표로 이동">
             <img src="https://m.media-amazon.com/images/I/71Y6NWkQX-L._AC_UF1000,1000_QL80_.jpg">
         </a>
-        <div class="caption">My Timetable</div>
+        <div class="caption">시간표</div>
     </div>
     <div class="polaroid" id="movies">
         <img src="https://assets.scriptslug.com/live/img/posters/eternal-sunshine-of-the-spotless-mind-2004.jpg?utime=20240519142109" alt="My Favorite Movies">
-        <div class="caption">My Favorite Movies</div>
+        <div class="caption">내가 좋아하는 영화</div>
     </div>
     <div class="polaroid" id="playlists">
         <img src="https://as2.ftcdn.net/v2/jpg/05/40/44/39/1000_F_540443991_6UIro7Kg9PPz5wGTAUn3EetzDlTaWgFZ.jpg">
-        <div class="caption">My Favorite Songs</div>
+        <div class="caption">내가 좋아하는 노래</div>
     </div>
     <div class="polaroid" id="hobby">
         <img src="https://image.fmkorea.com/files/attach/new3/20231111/2518140/717593755/6382017196/83684a84c14319bf2d104a96543da896.jpg">
-        <div class="caption">My Hobby</div>
+        <div class="caption">나의 취미</div>
     </div>
     <div class="polaroid" id="dream">
         <img src="https://as1.ftcdn.net/v2/jpg/04/63/54/46/1000_F_463544640_wfsL9bhnGfReACXXeF6hFthj28nX5aIJ.jpg">
-        <div class="caption">My Dream</div>
+        <div class="caption">나의 꿈</div>
     </div>
 </div>
 </body>
