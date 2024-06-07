@@ -11,37 +11,50 @@
         margin: 0;
         font-family: 'Arita';
         color: whitesmoke;
+        background-color: beige;
     }
     .header {
-        height: 5%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #444;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.7);
+        font-size: 72px;
+        text-align: center;
+        position: relative;
+        top: 1%;
+        left: 1%;
+        width: 98%;
+        letter-spacing: 15px;
+        background-color: dodgerblue;
+        border: 1px solid darkolivegreen;
+        color: beige;
     }
     .header h1 {
         font-size: 36px;
         letter-spacing: 10px;
         margin: 0;
     }
+    .linkText {
+        position: relative;
+        top: 2%;
+        left: 1%;
+        width: 98%;
+        font-size: 24px;
+        text-align: right;
+    }
     .iframe-container {
-        height: 95%;
-        background-color: #76757C;
+        position: relative;
+        left: 25%;
+        top: 1%;
     }
-    .iframe-container iframe {
-        width: 100%;
-        height: 100%;
-        border: none;
-    }
+    
 </style>
 </head>
 <body>
-<div class="header">
-    <h1>나의 웹사이트</h1>
-</div>
-<div class="iframe-container">
-    <iframe src="Introduction.html"></iframe>
-</div>
+    <div class="header">
+        <b>INTRODUCTION</b>
+    </div>
+    <div class="linkText">
+        <span><a href="Information.html" target="if_a" title="클릭 시 사용법이 나타납니다.">웹 이용 안내</a></span>
+        <span><a href="Introduce.html" target="if_a" title="클릭 시 '내 소개'를 시작합니다.">자기 소개</a></span>
+        <span><a href="https://github.com/NamingS" target="_blank" title="클릭 시 새 창에서 나의 GitHub 사이트에 연결합니다.">GitHub</a></span>
+    </div>
+    <iframe class="iframe-container" src="InformationFrame.html" width="820px" height="770px" frameborder="0" name="if_a"></iframe>
 </body>
 </html>
